@@ -55,7 +55,7 @@ export const quizzes: Quiz[] = [
           { text: '35 minuter', isCorrect: false },
         ],
         explanation:
-          'En seniormatch i handboll spelas i två halvlekar om vardera 30 minuter, alltså 2 x 30 minuter. Halvtidspausen är normalt 10 minuter. Ungdomsmatcher kan ha kortare halvlekar beroende på åldersklass.',
+          'En seniormatch i handboll spelas i två halvlekar om vardera 30 minuter, alltså 2 x 30 minuter. Halvtidspausen är normalt 10 minuter. Ungdomsmatcher har kortare halvlekar: 2x25 min (U15–U16), 2x20 min (U14), 2x15 min (U12–U13).',
       },
       {
         id: 5,
@@ -92,7 +92,7 @@ export const quizzes: Quiz[] = [
           { text: '6 mot 6', isCorrect: false },
         ],
         explanation:
-          'Minihandboll för U9 spelas i formatet 4 mot 4 på en mindre plan. Det ger barnen mer bollkontakt och mer utrymme att utveckla grundläggande färdigheter. Reglerna är också förenklade jämfört med seniorhandboll.',
+          'Minihandboll för U9 spelas med 4 utespelare (plus målvakt) per lag på en miniplan (20x12 meter). Det ger barnen mer bollkontakt och mer utrymme att utveckla grundläggande färdigheter. Reglerna är också förenklade jämfört med seniorhandboll.',
       },
       {
         id: 8,
@@ -482,7 +482,7 @@ export const quizzes: Quiz[] = [
           { text: 'Obegränsat antal, det handlar bara om tid', isCorrect: false },
         ],
         explanation:
-          'Efter att förvarningstecknet för passivt spel har visats har det anfallande laget maximalt 4 passningar på sig att avsluta anfallet med ett skott mot mål. Om laget inte skjuter inom dessa passningar döms frikast till motståndarlaget. Nationella förbund kan tillåta fler passningar (max 6) beroende på ålder och nivå.',
+          'Efter att förvarningstecknet för passivt spel har visats har det anfallande laget maximalt 4 passningar på sig att avsluta anfallet med ett skott mot mål. Om laget inte skjuter inom dessa passningar döms frikast till motståndarlaget. Observera att 4-passningsregeln tillämpas från U15 och uppåt – i U14 och yngre tillämpas inte denna regel.',
       },
       {
         id: 6,

@@ -38,7 +38,7 @@ export const lessons: Lesson[] = [
         title: 'Spelets grunder',
         icon: '⏱️',
         content: [
-          'En ordinarie handbollsmatch för seniorer spelas i två halvlekar om 30 minuter vardera, med 10 minuters halvtidspaus. För ungdomshandboll (vanligtvis 12–16 år) spelas halvlekarna i 2x25 minuter. Matchtiden kan variera ytterligare för yngre åldersgrupper enligt distriktets bestämmelser.',
+          'En ordinarie handbollsmatch för seniorer spelas i två halvlekar om 30 minuter vardera, med 10 minuters halvtidspaus. För ungdomshandboll varierar speltiden beroende på åldersklass: 2x25 minuter för U15–U16, 2x20 minuter för U14, och 2x15 minuter för U12–U13. Yngre åldersgrupper (U9–U11) spelar vanligtvis 1x20 eller 2x15 minuter.',
           'Varje lag får bestå av upp till 16 spelare, varav 7 befinner sig på planen samtidigt (6 utespelare och 1 målvakt). Byten kan göras löpande via byteszonen utan att meddela sekretariatet. Det finns ingen begränsning på antalet byten under en match.',
           'Bollstorleken varierar beroende på ålder och kön. Storlek 3 (58–60 cm, 425–475 g) används av herrar och pojkar 16 år och äldre. Storlek 2 (54–56 cm, 325–375 g) används av damer, flickor 14 år och äldre samt pojkar 12–16 år. Storlek 1 (50–52 cm, 290–330 g) används av flickor 8–14 år och pojkar 8–12 år. Storlek 0 (46–48 cm) används i minihandboll för de allra yngsta.',
         ],
@@ -48,8 +48,8 @@ export const lessons: Lesson[] = [
         icon: '👶',
         content: [
           'Mini- och barnhandboll är anpassade för att barnen ska lära sig handbollens grunder i en rolig och trygg miljö. Reglerna är förenklade och anpassade efter barnens ålder och utvecklingsnivå. Det viktigaste är att alla barn får spela, att de har kul och att de lär sig grundläggande färdigheter.',
-          'I U7 (7 år och yngre) och U8 spelas 4 mot 4 på en mindre plan (20x12 meter), utan målvakt. Alla barn ska delta lika mycket och resultatet är sekundärt. I U9 (9 år och yngre) spelas också 4 mot 4, men kan övergå till 5 mot 5 under säsongen. I U10 spelas 5 mot 5. Här börjar man introducera enklare taktiska koncept.',
-          'I U11 (11 år och yngre) spelas 6 mot 6 på en fullstor plan (40x20 meter), och här introduceras målvakt. Reglerna börjar likna de ordinarie reglerna mer, men med förenklingar som till exempel att passivt spel sällan döms och att bestraffningar är mildare.',
+          'Minihandboll spelas med 4 utespelare och en målvakt per lag. I U7 (7 år och yngre) och U8 spelas 4 mot 4 (utespelare) på en miniplan (20x12 meter). Alla barn ska delta lika mycket och resultatet är sekundärt. I U9 spelas också 4 mot 4 på miniplan, men kan övergå till 5 mot 5 på kortplan (26x20 meter). I U10 spelas 5 mot 5 på kortplan.',
+          'I U11 (11 år och yngre) spelas 6 mot 6 på en fullstor plan (40x20 meter). Reglerna börjar likna de ordinarie reglerna mer, men med förenklingar – till exempel tillämpas inte 4-passningsregeln vid passivt spel i U14 och yngre, och bestraffningar är mildare.',
           'Genomgående för all barnhandboll gäller att fokus ska ligga på lärande och glädje, inte på resultat. Som domare i barnmatcher är din viktigaste uppgift att skapa en positiv och säker miljö där barnen kan utvecklas.',
         ],
       },
@@ -251,7 +251,7 @@ export const lessons: Lesson[] = [
         content: [
           'Passivt spel innebär att det anfallande laget inte gör något verkligt försök att skjuta eller göra mål. Istället håller de bollen i omlopp utan att angripa försvarsmuren eller söka avslut. Regeln finns för att förhindra att lag spelar på tid eller undviker spel – det strider mot handbollens snabba och offensiva karaktär.',
           'När domaren bedömer att det anfallande laget spelar passivt höjer hen armen med öppen handflata (tecken 17 – förvarningstecken för passivt spel). Från och med denna signal har det anfallande laget maximalt 4 passningar på sig att avsluta anfallet med ett skott mot mål. Om de inte skjuter inom dessa passningar döms frikast för det försvarande laget.',
-          'Bedömningen av passivt spel kräver erfarenhet och känsla för spelet. Faktorer att ta hänsyn till inkluderar: gör det anfallande laget framåtrörelser? Söker de luckor i försvaret? Försöker de nå ett avslut? Om svaret är ja, även om det tar tid, är det inte nödvändigtvis passivt spel. Men om laget bara bollar runt utan avsikt att anfalla, ska förvarningssignalen ges. Ett skott mot mål nollställer förvarningen.',
+          'Bedömningen av passivt spel kräver erfarenhet och känsla för spelet. Faktorer att ta hänsyn till inkluderar: gör det anfallande laget framåtrörelser? Söker de luckor i försvaret? Försöker de nå ett avslut? Om svaret är ja, även om det tar tid, är det inte nödvändigtvis passivt spel. Men om laget bara bollar runt utan avsikt att anfalla, ska förvarningssignalen ges. Ett skott mot mål nollställer förvarningen. Observera att 4-passningsregeln vid passivt spel tillämpas från U15 och uppåt – i U14 och yngre tillämpas inte denna regel.',
         ],
       },
     ],
