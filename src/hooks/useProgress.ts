@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { Progress, LessonProgress } from '@/types';
 
 const STORAGE_KEY = 'handboll-domare-progress';
-const TOTAL_LESSONS = 6;
+const TOTAL_LESSONS = 10;
 
 const defaultProgress: LessonProgress = {
   completed: false,

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { LessonProgress } from '@/types';
+import IconResolver from '@/components/icons/IconResolver';
 
 interface LessonCardProps {
   id: number;
@@ -38,15 +39,15 @@ export default function LessonCard({
     >
       <div className="flex items-start gap-4">
         <div
-          className={`text-4xl flex-shrink-0 w-16 h-16 flex items-center justify-center rounded-xl ${
+          className={`flex-shrink-0 w-16 h-16 flex items-center justify-center rounded-xl ${
             completed
-              ? 'bg-green-100'
+              ? 'bg-green-100 text-green-600'
               : isUnlocked
-              ? 'bg-orange/10 group-hover:bg-orange/20'
-              : 'bg-gray-100'
+              ? 'bg-orange/10 text-navy group-hover:bg-orange/20'
+              : 'bg-gray-100 text-gray-400'
           } transition-colors`}
         >
-          {completed ? '✅' : icon}
+          {completed ? '✅' : <IconResolver icon={icon} size={32} />}
         </div>
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1">

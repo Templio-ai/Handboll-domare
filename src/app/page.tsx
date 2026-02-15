@@ -4,6 +4,7 @@ import { useProgress } from '@/hooks/useProgress';
 import { lessons } from '@/data/lessons';
 import ProgressBar from '@/components/ProgressBar';
 import LessonCard from '@/components/LessonCard';
+import { HandballIcon } from '@/components/icons/HandballIcons';
 
 export default function Home() {
   const {
@@ -20,7 +21,9 @@ export default function Home() {
       <header className="bg-gradient-to-br from-navy via-navy-light to-navy-dark text-white">
         <div className="max-w-4xl mx-auto px-4 py-16 sm:py-24">
           <div className="text-center">
-            <div className="text-6xl mb-6">🤾</div>
+            <div className="mb-6 flex justify-center">
+              <HandballIcon size={64} className="text-orange-light" />
+            </div>
             <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight">
               Handbollsdomare
             </h1>
@@ -29,7 +32,7 @@ export default function Home() {
             </p>
             <p className="text-base text-white/60 max-w-xl mx-auto leading-relaxed">
               Välkommen till din resa som handbollsdomare! Här lär du dig allt
-              från grundregler till matchdagsförberedelser genom 6 interaktiva
+              från grundregler till matchdagsförberedelser genom 10 interaktiva
               lektioner.
             </p>
           </div>
@@ -88,7 +91,7 @@ export default function Home() {
         {/* Footer info */}
         <div className="mt-12 text-center text-sm text-gray-400">
           <p>Baserad på Svenska Handbollförbundets regelverk</p>
-          <p className="mt-1">Klara alla 6 lektioner för att slutföra utbildningen</p>
+          <p className="mt-1">Klara alla 10 lektioner för att slutföra utbildningen</p>
         </div>
       </main>
     </div>

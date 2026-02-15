@@ -8,6 +8,7 @@ import { quizzes } from '@/data/quizzes';
 import { useProgress } from '@/hooks/useProgress';
 import LessonContent from '@/components/LessonContent';
 import Quiz from '@/components/Quiz';
+import IconResolver from '@/components/icons/IconResolver';
 
 export default function LessonPage() {
   const params = useParams();
@@ -79,7 +80,9 @@ export default function LessonPage() {
       {/* Hero */}
       <div className="bg-gradient-to-br from-navy via-navy-light to-navy-dark text-white">
         <div className="max-w-4xl mx-auto px-4 py-12 sm:py-16 text-center">
-          <div className="text-5xl mb-4">{lesson.icon}</div>
+          <div className="text-5xl mb-4 flex justify-center text-orange-light">
+            <IconResolver icon={lesson.icon} size={56} />
+          </div>
           <span className="text-xs font-semibold uppercase tracking-widest text-orange-light">
             Lektion {lesson.id} av {lessons.length}
           </span>

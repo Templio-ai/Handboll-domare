@@ -1,9 +1,40 @@
+export interface ScenarioBlock {
+  type: 'scenario';
+  title?: string;
+  scenario: string;
+  question?: string;
+  answer?: string;
+}
+
+export interface TipBlock {
+  type: 'tip';
+  tip: string;
+  source?: string;
+}
+
+export interface SignalBlock {
+  type: 'signal';
+  number: number;
+  name: string;
+  description: string;
+  usage: string;
+  mandatory?: boolean;
+}
+
+export interface DidYouKnowBlock {
+  type: 'didYouKnow';
+  fact: string;
+}
+
+export type RichContentBlock = ScenarioBlock | TipBlock | SignalBlock | DidYouKnowBlock;
+
 export interface ContentSection {
   title: string;
   icon: string;
   content: string[];
   highlights?: string[];
   list?: string[];
+  richBlocks?: RichContentBlock[];
 }
 
 export interface Lesson {

@@ -797,4 +797,611 @@ export const quizzes: Quiz[] = [
       },
     ],
   },
+
+  // ============================================================
+  // Quiz 7: Kasttyper & 7-meterskast (lessonId: 7)
+  // ============================================================
+  {
+    lessonId: 7,
+    passingScore: 75,
+    questions: [
+      {
+        id: 1,
+        question: 'Var ska avkastet utföras från?',
+        options: [
+          { text: 'Från målområdeslinjen', isCorrect: false },
+          { text: 'Från planens mittpunkt', isCorrect: true },
+          { text: 'Från frikastlinjen (9 meter)', isCorrect: false },
+          { text: 'Från sidlinjen vid byteszonen', isCorrect: false },
+        ],
+        explanation:
+          'Avkast utförs alltid från planens mittpunkt. Kastaren måste stå med minst en fot på mittlinjen. Avkast görs vid matchstart, start av andra halvlek och efter varje gjort mål.',
+      },
+      {
+        id: 2,
+        question:
+          'Vid inkast – hur långt avstånd ska motståndarna hålla från kastaren?',
+        options: [
+          { text: '1 meter', isCorrect: false },
+          { text: '2 meter', isCorrect: false },
+          { text: '3 meter', isCorrect: true },
+          { text: '5 meter', isCorrect: false },
+        ],
+        explanation:
+          'Vid inkast ska motståndarna hålla minst 3 meters avstånd från kastaren. Samma avstånd gäller vid frikast. Det är domarens ansvar att se till att detta avstånd respekteras.',
+      },
+      {
+        id: 3,
+        question: 'Krävs det visselsignal för att utföra ett målkast?',
+        options: [
+          { text: 'Ja, alltid', isCorrect: false },
+          {
+            text: 'Nej, målvakten får kasta direkt utan visselsignal',
+            isCorrect: true,
+          },
+          { text: 'Bara om motståndarna inte är redo', isCorrect: false },
+          { text: 'Bara i andra halvlek', isCorrect: false },
+        ],
+        explanation:
+          'Målkast kräver ingen visselsignal – målvakten får kasta direkt inifrån målområdet. Detta gör att spelet kan återupptas snabbt, vilket ofta utnyttjas för snabba kontringar.',
+      },
+      {
+        id: 4,
+        question:
+          'Om ett frikast döms mellan 6-meterslinjen och 9-meterslinjen, var ska frikastet utföras?',
+        options: [
+          { text: 'På exakt den plats där regelbrottet skedde', isCorrect: false },
+          {
+            text: 'Från närmaste punkt på frikastlinjen (9-meterslinjen)',
+            isCorrect: true,
+          },
+          { text: 'Från mittlinjen', isCorrect: false },
+          { text: 'Från 7-meterslinjen', isCorrect: false },
+        ],
+        explanation:
+          'Om regelbrottet skedde mellan målområdeslinjen (6 meter) och frikastlinjen (9 meter) utförs frikastet från närmaste punkt på frikastlinjen. Frikast kan aldrig utföras närmare målet än 9 meter (förutom vid 7-meterskast).',
+      },
+      {
+        id: 5,
+        question: 'När ska 7-meterskast dömas?',
+        options: [
+          { text: 'Vid varje kontaktregelbrott nära målet', isCorrect: false },
+          {
+            text: 'När en klar målchans förstörs genom ett regelbrott',
+            isCorrect: true,
+          },
+          { text: 'Bara vid avsiktliga regelbrott i målområdet', isCorrect: false },
+          { text: 'När en spelare protesterar mot domarens beslut', isCorrect: false },
+        ],
+        explanation:
+          '7-meterskast döms när en klar målchans förstörs genom ett regelbrott, oavsett var på planen det sker. Det kan också dömas vid avsiktlig tillbakaspelning till målvakten eller otillåtet intrång i eget målområde vid tomt mål-spel.',
+      },
+      {
+        id: 6,
+        question:
+          'Var ska målvakten stå vid ett 7-meterskast?',
+        options: [
+          { text: 'På mållinjen', isCorrect: false },
+          { text: 'Minst 1 meter framför målet', isCorrect: false },
+          {
+            text: 'På eller bakom 4-meterslinjen (4 meter från målet)',
+            isCorrect: true,
+          },
+          { text: 'Var som helst i målområdet', isCorrect: false },
+        ],
+        explanation:
+          'Vid 7-meterskast måste målvakten stå på eller bakom den så kallade 4-meterslinjen, som ligger 4 meter från målet. Målvakten får röra sig framåt först efter att bollen lämnat kastarens hand. Om målvakten bryter för tidigt och räddar – omskjutning.',
+      },
+      {
+        id: 7,
+        question:
+          'Vid 7-meterskast gör skytten en tydlig fintrörelse och stoppar upp innan hen kastar. Vad gäller?',
+        options: [
+          { text: 'Det är tillåtet så länge bollen inte lämnar handen', isCorrect: false },
+          {
+            text: 'Det är inte tillåtet – kastet måste vara en sammanhängande rörelse',
+            isCorrect: true,
+          },
+          { text: 'Det är alltid tillåtet att finta vid 7-meterskast', isCorrect: false },
+          { text: 'Skytten får en ny chans att göra om kastet', isCorrect: false },
+        ],
+        explanation:
+          'Vid 7-meterskast måste kastet vara en sammanhängande rörelse framåt. Att stanna upp eller finta så att kaströrelsen avbryts är inte tillåtet och döms som regelbrott. Målkast ges till det försvarande laget. Skruvade eller böjda kastbanor är dock tillåtna.',
+      },
+      {
+        id: 8,
+        question:
+          'Vid avkast – var ska det kastande lagets medspelare befinna sig?',
+        options: [
+          { text: 'Var som helst på planen', isCorrect: false },
+          { text: 'Inom 3 meter från kastaren', isCorrect: false },
+          {
+            text: 'På sin egen planhalva',
+            isCorrect: true,
+          },
+          { text: 'Utanför 9-meterslinjen', isCorrect: false },
+        ],
+        explanation:
+          'Vid avkast ska alla spelare i det kastande laget befinna sig på sin egen planhalva. Motståndarna däremot får befinna sig var som helst på planen, men måste hålla 3 meters avstånd från kastaren. Det är ett vanligt fel att spelare inte hunnit tillbaka till rätt planhalva efter ett snabbt mål.',
+      },
+    ],
+  },
+
+  // ============================================================
+  // Quiz 8: Spelarbyten, Utrustning & Speciella Situationer (lessonId: 8)
+  // ============================================================
+  {
+    lessonId: 8,
+    passingScore: 75,
+    questions: [
+      {
+        id: 1,
+        question: 'Hur lång är byteszonen (totalt, från sida till sida)?',
+        options: [
+          { text: '3 meter', isCorrect: false },
+          { text: '6 meter', isCorrect: false },
+          {
+            text: '9 meter (4,5 meter åt vardera sidan om mittlinjen)',
+            isCorrect: true,
+          },
+          { text: '12 meter', isCorrect: false },
+        ],
+        explanation:
+          'Byteszonen sträcker sig 4,5 meter åt vardera sidan om mittlinjen, alltså totalt 9 meter. Alla spelarbyten måste ske inom denna zon. Byten utanför zonen är regelbrott.',
+      },
+      {
+        id: 2,
+        question:
+          'Vad händer om en ersättare springer in på planen innan den utgående spelaren har lämnat?',
+        options: [
+          { text: 'Inget, det är tillåtet vid löpande byten', isCorrect: false },
+          { text: 'Frikast till motståndarlaget', isCorrect: false },
+          {
+            text: 'Frikast och 2 minuters utvisning',
+            isCorrect: true,
+          },
+          { text: 'Varning (gult kort) till den inkommande spelaren', isCorrect: false },
+        ],
+        explanation:
+          'Om det tillfälligt blir för många spelare på planen på grund av ett felaktigt byte, döms frikast till motståndarlaget och den spelare som orsakade övertaligheten (vanligtvis den som sprang in för tidigt) får 2 minuters utvisning.',
+      },
+      {
+        id: 3,
+        question: 'En spelare har tejpat över sina örhängen med sportejp. Får hen spela?',
+        options: [
+          { text: 'Ja, om tejpen sitter ordentligt', isCorrect: false },
+          { text: 'Ja, om tränaren godkänner det', isCorrect: false },
+          {
+            text: 'Nej, smycken måste alltid tas av helt – tejp räcker inte',
+            isCorrect: true,
+          },
+          { text: 'Ja, men bara i ungdomsmatcher', isCorrect: false },
+        ],
+        explanation:
+          'Att tejpa över smycken är inte tillåtet. Reglerna är tydliga: alla smycken (ringar, örhängen, halsband, piercingar etc.) måste tas av helt. Tejpning accepteras inte som lösning oavsett hur väl det sitter.',
+      },
+      {
+        id: 4,
+        question: 'Vad gäller för en spelare som blöder under match?',
+        options: [
+          { text: 'Spelaren får spela vidare om blödningen är liten', isCorrect: false },
+          {
+            text: 'Spelaren måste omedelbart lämna planen och får återvända först när blödningen stoppats och såret täckts',
+            isCorrect: true,
+          },
+          { text: 'Spelaren kan spela vidare om tränaren godkänner det', isCorrect: false },
+          { text: 'Bara målvakten behöver gå av vid blödning', isCorrect: false },
+        ],
+        explanation:
+          'En blödande spelare måste omedelbart lämna planen och får inte återvända förrän blödningen stoppats och såret täckts ordentligt. Eventuellt blod på kläder ska också torkas bort. Regeln gäller alla spelare utan undantag.',
+      },
+      {
+        id: 5,
+        question:
+          'Hur många personer från det skadade lagets bänk får gå ut på planen vid en skada?',
+        options: [
+          { text: '1 person', isCorrect: false },
+          { text: 'Maximalt 2 personer', isCorrect: true },
+          { text: 'Maximalt 3 personer', isCorrect: false },
+          { text: 'Hela medicinteamet', isCorrect: false },
+        ],
+        explanation:
+          'Vid skador får maximalt 2 personer från det skadade lagets bänk gå ut på planen för att hjälpa spelaren, och bara efter domarens tillåtelse (domaren visar tecken 16). Den skadade spelaren ska i första hand transporteras av planen.',
+      },
+      {
+        id: 6,
+        question: 'Vad gäller för tröjnummer på spelarnas ryggar?',
+        options: [
+          { text: 'De ska vara minst 10 cm höga', isCorrect: false },
+          { text: 'De ska vara minst 15 cm höga', isCorrect: false },
+          {
+            text: 'De ska vara minst 20 cm höga på ryggen och minst 10 cm på bröstet',
+            isCorrect: true,
+          },
+          { text: 'Det finns inget krav på storlek, bara att de är synliga', isCorrect: false },
+        ],
+        explanation:
+          'Tröjnummer ska vara minst 20 cm höga på ryggen och minst 10 cm höga på bröstet. De ska vara tydligt synliga och kontrastera mot tröjans färg. Domaren bör kontrollera detta vid utrustningskontrollen före match.',
+      },
+      {
+        id: 7,
+        question: 'Om en extra boll rullar in på planen under spel, vad ska domaren göra?',
+        options: [
+          { text: 'Ignorera den om den inte stör spelet', isCorrect: false },
+          {
+            text: 'Avbryta spelet om bollen påverkar spelet och återuppta med korrekt kast',
+            isCorrect: true,
+          },
+          { text: 'Vänta tills bollen är utanför planen och sedan blåsa', isCorrect: false },
+          { text: 'Ge varning till det lag som har sin bänk närmast', isCorrect: false },
+        ],
+        explanation:
+          'Om en extra boll hamnar på planen och påverkar spelet ska domaren avbryta spelet. Spelet återupptas med det kast som situationen kräver baserat på bollpositionen vid avbrottet. Om extrabollen inte påverkar spelet kan domaren vänta till nästa avbrott.',
+      },
+      {
+        id: 8,
+        question: 'Är fitnesstrackers och smartklockor tillåtna under match?',
+        options: [
+          { text: 'Ja, de räknas inte som smycken', isCorrect: false },
+          { text: 'Ja, om de har mjukt armband', isCorrect: false },
+          {
+            text: 'Nej, de är förbjudna sedan regeländringen 2024',
+            isCorrect: true,
+          },
+          { text: 'Bara i ungdomsmatcher', isCorrect: false },
+        ],
+        explanation:
+          'Fitnesstrackers, smartklockor och liknande elektroniska enheter är sedan 2024 helt förbjudna under match. Tidigare fanns en gråzon, men regeländringen har gjort det tydligt att inga elektroniska apparater får bäras under spel.',
+      },
+      {
+        id: 9,
+        question:
+          'Behöver spelarbyten anmälas till sekretariatet?',
+        options: [
+          { text: 'Ja, alltid', isCorrect: false },
+          { text: 'Ja, men bara vid målvaktsbyten', isCorrect: false },
+          {
+            text: 'Nej, byten sker löpande via byteszonen utan anmälan',
+            isCorrect: true,
+          },
+          { text: 'Ja, om det sker fler än 10 byten per halvlek', isCorrect: false },
+        ],
+        explanation:
+          'Spelarbyten i handboll sker löpande genom byteszonen och behöver inte anmälas till sekretariatet. Det finns heller ingen begränsning på antalet byten under en match. Spelaren som ska av planen måste lämna innan ersättaren går in.',
+      },
+    ],
+  },
+
+  // ============================================================
+  // Quiz 9: Fördjupad Regelkunskap (lessonId: 9)
+  // ============================================================
+  {
+    lessonId: 9,
+    passingScore: 75,
+    questions: [
+      {
+        id: 1,
+        question:
+          'Vad händer om en utespelare beträder sitt eget målområde för att stoppa ett skott mot tomt mål?',
+        options: [
+          { text: 'Frikast till motståndarlaget', isCorrect: false },
+          {
+            text: '7-meterskast till motståndarlaget',
+            isCorrect: true,
+          },
+          { text: 'Inget, det är tillåtet vid tomt mål', isCorrect: false },
+          { text: 'Varning till spelaren', isCorrect: false },
+        ],
+        explanation:
+          'Om en utespelare beträder sitt eget målområde i en försvarssituation vid tomt mål-spel döms 7-meterskast till motståndarlaget. Det gäller oavsett om spelaren rör bollen eller inte – det räcker att hen beträder målområdet. Spelaren ska också utvisas 2 minuter.',
+      },
+      {
+        id: 2,
+        question:
+          'En utespelare passar avsiktligt bollen tillbaka till sin målvakt som står i målområdet. Vad döms?',
+        options: [
+          { text: 'Frikast till motståndarlaget', isCorrect: false },
+          {
+            text: '7-meterskast till motståndarlaget',
+            isCorrect: true,
+          },
+          { text: 'Inget regelbrott, det är alltid tillåtet att passa till målvakten', isCorrect: false },
+          { text: 'Varning till utespelaren', isCorrect: false },
+        ],
+        explanation:
+          'Avsiktlig tillbakaspelning till målvakten i målområdet bestraffas med 7-meterskast till motståndarlaget. Nyckelordet är "avsiktligt" – passningen måste vara medvetet riktad mot målvakten. Oavsiktliga studsare som hamnar hos målvakten är inget regelbrott.',
+      },
+      {
+        id: 3,
+        question:
+          'Vad är avgörande vid bedömning av om kontakt är tillåten eller otillåten?',
+        options: [
+          { text: 'Om det var den anfallande eller försvarande spelaren', isCorrect: false },
+          {
+            text: 'Om kontakten var riktad mot bollen eller mot kroppen',
+            isCorrect: true,
+          },
+          { text: 'Hur hårt kontakten var', isCorrect: false },
+          { text: 'Om den drabbade spelaren föll', isCorrect: false },
+        ],
+        explanation:
+          'Den grundläggande frågan vid kontaktbedömning är om kontakten var riktad mot bollen eller mot kroppen. En försvarare som försöker nå bollen med öppen hand och berör anfallaren gör generellt tillåten kontakt. Kontakt riktad mot kroppen utan bollsyfte är otillåten.',
+      },
+      {
+        id: 4,
+        question:
+          'Varför bedöms kontakt mot en spelare som befinner sig i luften strängare?',
+        options: [
+          { text: 'Det är en gammal tradition i handboll', isCorrect: false },
+          {
+            text: 'Spelaren kan inte kontrollera sin landning och riskerar allvarliga skador',
+            isCorrect: true,
+          },
+          { text: 'Det är bara strängare i internationella matcher', isCorrect: false },
+          { text: 'Det gäller bara vid skott mot mål', isCorrect: false },
+        ],
+        explanation:
+          'En spelare i luften (till exempel under flygskott) kan inte kontrollera sin landning. Kontakt som tvingar spelaren att landa okontrollerat kan leda till allvarliga skador. Därför bedöms sådan kontakt strängare – normalt minst 2 minuters utvisning.',
+      },
+      {
+        id: 5,
+        question:
+          'Vilken regeländring gäller filmning (simulering) sedan 2024?',
+        options: [
+          { text: 'Filmning är inte längre bestraffningsbar', isCorrect: false },
+          { text: 'Filmning bestraffas nu bara med frikast', isCorrect: false },
+          {
+            text: 'Uppenbar filmning kan bestraffas med direkt diskvalifikation vid grova fall',
+            isCorrect: true,
+          },
+          { text: 'Filmning ger automatiskt 7-meterskast', isCorrect: false },
+        ],
+        explanation:
+          'Sedan 2024 har IHF förtydligat att uppenbar filmning kan bestraffas med direkt diskvalifikation (rött kort) vid grova fall, inte bara 2 minuters utvisning. Syftet är att stärkt motverka simulering som underminerar spelets trovärdighet.',
+      },
+      {
+        id: 6,
+        question: 'Är fitnesstrackers tillåtna under handbollsmatch sedan 2024?',
+        options: [
+          { text: 'Ja, om de inte sticker ut', isCorrect: false },
+          {
+            text: 'Nej, de är helt förbjudna',
+            isCorrect: true,
+          },
+          { text: 'Ja, men bara för målvakter', isCorrect: false },
+          { text: 'Bara under träning, inte under match', isCorrect: false },
+        ],
+        explanation:
+          'Sedan 2024 är fitnesstrackers, smartklockor och liknande elektroniska enheter helt förbjudna under match. Regeln gäller alla spelare inklusive målvakter. Domaren ska kontrollera detta vid utrustningsinspektionen före match.',
+      },
+      {
+        id: 7,
+        question:
+          'Om målvakten fångar bollen i målområdet efter en räddning – får hen lämna målområdet med bollen?',
+        options: [
+          {
+            text: 'Nej, hen måste spela bollen inifrån målområdet',
+            isCorrect: true,
+          },
+          { text: 'Ja, utan begränsning', isCorrect: false },
+          { text: 'Ja, men bara om hen dribblar', isCorrect: false },
+          { text: 'Bara om det är en kontring', isCorrect: false },
+        ],
+        explanation:
+          'Om målvakten har kontroll över bollen i målområdet (efter räddning) får hen inte lämna målområdet med bollen. Hen måste spela bollen inifrån målområdet – antingen kasta till en medspelare eller försöka skjuta mot motståndarens mål.',
+      },
+      {
+        id: 8,
+        question:
+          'Kontakt bakifrån mot en spelare ska generellt bedömas...',
+        options: [
+          { text: 'Mildare, eftersom spelaren inte ser den komma', isCorrect: false },
+          {
+            text: 'Strängare, eftersom spelaren inte kan skydda sig',
+            isCorrect: true,
+          },
+          { text: 'Likadant som kontakt framifrån', isCorrect: false },
+          { text: 'Det beror helt på matchsituationen', isCorrect: false },
+        ],
+        explanation:
+          'Kontakt bakifrån bedöms generellt strängare eftersom spelaren inte kan se kontakten komma och därför inte kan skydda sig. Att dra, knuffa eller tackla en spelare bakifrån motiverar normalt progressiv bestraffning (utvisning eller strängare).',
+      },
+      {
+        id: 9,
+        question:
+          'Vad menas med "tillbakaspelning" i handbollsreglerna?',
+        options: [
+          { text: 'Att spela bollen med foten tillbaka i eget mål', isCorrect: false },
+          {
+            text: 'Att en utespelare avsiktligt spelar bollen till sin målvakt i målområdet',
+            isCorrect: true,
+          },
+          { text: 'Att domaren spelar tillbaka en videoupptagning', isCorrect: false },
+          { text: 'Att en spelare passerar bollen bakåt till en medspelare', isCorrect: false },
+        ],
+        explanation:
+          'Tillbakaspelning innebär att en utespelare avsiktligt spelar bollen till sin egen målvakt i målområdet. Det är ett regelbrott som bestraffas med 7-meterskast till motståndarlaget. Regeln finns för att förhindra att lag skyddar bollen genom att spela den till målvakten.',
+      },
+      {
+        id: 10,
+        question:
+          'Hur ofta uppdaterar IHF regelverket för handboll?',
+        options: [
+          { text: 'Varje år', isCorrect: false },
+          {
+            text: 'Vartannat år (jämna år)',
+            isCorrect: true,
+          },
+          { text: 'Vart fjärde år (i samband med OS)', isCorrect: false },
+          { text: 'Bara vid behov, inget fast schema', isCorrect: false },
+        ],
+        explanation:
+          'IHF uppdaterar regelverket vartannat år, alltid jämna år (2024, 2026, etc.). Större regeländringar träder i kraft vid VM- eller OS-turneringar och sprids sedan till alla nivåer. Som domare är det viktigt att hålla sig uppdaterad via ditt distriktsförbund.',
+      },
+    ],
+  },
+
+  // ============================================================
+  // Quiz 10: Redo för Match (lessonId: 10)
+  // ============================================================
+  {
+    lessonId: 10,
+    passingScore: 75,
+    questions: [
+      {
+        id: 1,
+        question: 'Hur tidigt bör du som domare komma till hallen före matchstart?',
+        options: [
+          { text: '10 minuter', isCorrect: false },
+          { text: '20 minuter', isCorrect: false },
+          { text: 'Minst 30 minuter', isCorrect: true },
+          { text: '60 minuter', isCorrect: false },
+        ],
+        explanation:
+          'Du bör komma till hallen minst 30 minuter före matchstart. Tiden behövs för planinspekt, EMP-kontroll, genomgång med tidtagare/sekreterare och egen uppvärmning. En väl förberedd domare utstrålar trygghet och kontroll.',
+      },
+      {
+        id: 2,
+        question:
+          'Du inser direkt efter en dom att du blåste frikast åt fel lag. Spelet har inte återupptagits. Vad gör du?',
+        options: [
+          { text: 'Ingenting, domarens beslut är slutgiltiga', isCorrect: false },
+          {
+            text: 'Korrigera beslutet omedelbart – blås igen och visa åt rätt lag',
+            isCorrect: true,
+          },
+          { text: 'Vänta tills halvtid och korrigera då', isCorrect: false },
+          { text: 'Fråga publiken om de såg vad som hände', isCorrect: false },
+        ],
+        explanation:
+          'Om du omedelbart inser att du gjort fel (inom några sekunder, innan spelet har fortsatt) kan du korrigera beslutet. Gör det kort och tydligt. Efter att spelet har återupptagits kan beslutet inte ändras. Att korrigera visar mod och ärlighet.',
+      },
+      {
+        id: 3,
+        question:
+          'Sekreteraren signalerar att en spelare har fått sin 3:e utvisning. Vad ska du göra?',
+        options: [
+          { text: 'Ge spelaren en fjärde utvisning', isCorrect: false },
+          { text: 'Ignorera signalen och fortsätta döma', isCorrect: false },
+          {
+            text: 'Bekräfta med sekreteraren och visa rött kort (diskvalifikation) till spelaren',
+            isCorrect: true,
+          },
+          { text: 'Ge en varning till spelaren istället', isCorrect: false },
+        ],
+        explanation:
+          'En spelares tredje utvisning leder automatiskt till diskvalifikation. När sekreteraren signalerar detta ska du vid nästa spelavbrott bekräfta med sekretariatet, visa rött kort till spelaren och skicka av hen. Laget spelar undertal i 2 minuter som vanligt.',
+      },
+      {
+        id: 4,
+        question:
+          'En tränare protesterar högljutt och upprepade gånger mot dina beslut. Hur hanterar du det?',
+        options: [
+          { text: 'Ignorera tränaren helt', isCorrect: false },
+          { text: 'Diskutera varje beslut med tränaren', isCorrect: false },
+          {
+            text: 'Ge en tydlig tillsägelse, sedan varning och vid fortsatta protester diskvalifikation',
+            isCorrect: true,
+          },
+          { text: 'Avbryta matchen direkt', isCorrect: false },
+        ],
+        explanation:
+          'Hantera protester stegvis: först en kort tillsägelse ("Beslutet är fattat"), sedan varning till den lagansvarige, och vid fortsatt störning diskvalifikation. Tränaren måste då lämna hallens spelområde. Dokumentera alltid i matchprotokollet.',
+      },
+      {
+        id: 5,
+        question:
+          'Vad bör du fokusera på under de första 5 minuterna av en match?',
+        options: [
+          { text: 'Att vara snäll och undvika att blåsa', isCorrect: false },
+          {
+            text: 'Att sätta standarden genom att vara tydlig och konsekvent i dina beslut',
+            isCorrect: true,
+          },
+          { text: 'Att prata med varje spelare om reglerna', isCorrect: false },
+          { text: 'Att observera utan att blåsa alls', isCorrect: false },
+        ],
+        explanation:
+          'De första 5 minuterna sätter du standarden för hela matchen. Visa tidigt att du har kontroll genom att vara tydlig och konsekvent i dina beslut. Om du är slappt i början blir det svårt att strama åt senare.',
+      },
+      {
+        id: 6,
+        question: 'Vilken extrautrustning bör du alltid ha med dig som domare?',
+        options: [
+          { text: 'En extra domardräkt i annan storlek', isCorrect: false },
+          {
+            text: 'En extra visselpipa',
+            isCorrect: true,
+          },
+          { text: 'En extra boll', isCorrect: false },
+          { text: 'En extra stoppur', isCorrect: false },
+        ],
+        explanation:
+          'En extra visselpipa är obligatorisk att ha med. Om din primära visselpipa slutar fungera under match behöver du en reserv omedelbart. Packa den i fickan eller ha den runt halsen som backup.',
+      },
+      {
+        id: 7,
+        question: 'Vad bör du skriva i din matchdagbok efter varje match?',
+        options: [
+          { text: 'Alla domslut du tagit under matchen', isCorrect: false },
+          { text: 'Bara saker som gick dåligt', isCorrect: false },
+          {
+            text: '3 saker som gick bra och 1 sak att förbättra',
+            isCorrect: true,
+          },
+          { text: 'Matchresultatet och spelarnas namn', isCorrect: false },
+        ],
+        explanation:
+          'Skriv ner 3 saker som gick bra och 1 sak du vill förbättra. Att fokusera på det positiva bygger självförtroende, och den enda förbättringspunkten ger dig ett konkret mål för nästa match. Över tid ser du mönster i din utveckling.',
+      },
+      {
+        id: 8,
+        question:
+          'Publiken beter sig hotfullt och kastar föremål på planen. Vad är ditt ansvar som domare?',
+        options: [
+          { text: 'Att själv hantera publiken', isCorrect: false },
+          { text: 'Att ignorera det och fortsätta matchen', isCorrect: false },
+          {
+            text: 'Att avbryta spelet och kontakta matchvärden – avbryta matchen om säkerheten inte kan garanteras',
+            isCorrect: true,
+          },
+          { text: 'Att ge varning till båda lagen', isCorrect: false },
+        ],
+        explanation:
+          'Publikproblem är matchvärdens ansvar, men du som domare ska avbryta spelet om säkerheten är hotad. Kontakta matchvärden och kräv att situationen löses. Om säkerheten inte kan garanteras har du rätt att avbryta matchen. Dokumentera alltid sådana händelser.',
+      },
+      {
+        id: 9,
+        question:
+          'Vilken enkel andningsteknik kan hjälpa dig att hantera stress under match?',
+        options: [
+          { text: 'Andas snabbt och ytligt', isCorrect: false },
+          {
+            text: 'Andas in 4 sekunder, håll 2 sekunder, andas ut 6 sekunder',
+            isCorrect: true,
+          },
+          { text: 'Håll andan i 10 sekunder', isCorrect: false },
+          { text: 'Andas bara genom munnen', isCorrect: false },
+        ],
+        explanation:
+          'Andningsteknik: andas in genom näsan i 4 sekunder, håll i 2 sekunder, andas ut genom munnen i 6 sekunder. Denna enkla teknik sänker pulsen och aktiverar det parasympatiska nervsystemet, vilket hjälper dig att fokusera och fatta bättre beslut under press.',
+      },
+      {
+        id: 10,
+        question:
+          'Vad är viktigare som domare – att ha rätt i varje enskilt beslut eller att vara konsekvent?',
+        options: [
+          { text: 'Att ha rätt i varje beslut', isCorrect: false },
+          {
+            text: 'Att vara konsekvent – liknande situationer bedöms likadant genom hela matchen',
+            isCorrect: true,
+          },
+          { text: 'Att blåsa så lite som möjligt', isCorrect: false },
+          { text: 'Att alltid ge fördel åt hemmalaget', isCorrect: false },
+        ],
+        explanation:
+          'Konsekvens är viktigare än perfektion. Ingen domare har rätt i 100% av fallen, men om du dömer liknande situationer likadant genom hela matchen bygger det förtroende hos både spelare och tränare. Inkonsekvens skapar frustration, även om enskilda beslut råkar vara korrekta.',
+      },
+    ],
+  },
 ];

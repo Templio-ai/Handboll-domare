@@ -1,6 +1,8 @@
 'use client';
 
 import { ContentSection } from '@/types';
+import IconResolver from '@/components/icons/IconResolver';
+import RichBlockRenderer from '@/components/content/RichBlockRenderer';
 
 interface LessonContentProps {
   sections: ContentSection[];
@@ -16,7 +18,9 @@ export default function LessonContent({ sections }: LessonContentProps) {
           style={{ animationDelay: `${index * 100}ms` }}
         >
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-3xl">{section.icon}</span>
+            <span className="text-3xl text-navy">
+              <IconResolver icon={section.icon} size={32} />
+            </span>
             <h2 className="text-2xl font-bold text-navy">{section.title}</h2>
           </div>
 
@@ -56,6 +60,14 @@ export default function LessonContent({ sections }: LessonContentProps) {
                   </li>
                 ))}
               </ol>
+            )}
+
+            {section.richBlocks && section.richBlocks.length > 0 && (
+              <div className="space-y-4 mt-6">
+                {section.richBlocks.map((block, bIndex) => (
+                  <RichBlockRenderer key={bIndex} block={block} />
+                ))}
+              </div>
             )}
           </div>
         </section>
