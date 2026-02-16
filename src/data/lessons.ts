@@ -46,7 +46,7 @@ export const lessons: Lesson[] = [
         content: [
           'En handbollsplan mäter 40 meter på längden och 20 meter på bredden. Planen omges av en sidlinje på de långa sidorna och en mållinje (eller ytterlinje) på de korta sidorna. Mitt på varje mållinje står ett mål som är 2 meter högt och 3 meter brett.',
           'Framför varje mål finns ett målområde som avgränsas av en halvcirkelformad linje 6 meter från målet, den så kallade målområdeslinjen. Denna zon är reserverad för målvakten – utespelare får inte beträda den. Linjen räknas som en del av målområdet, vilket betyder att det räcker att trampa på linjen för att det ska räknas som inträngning.',
-          'Utanför målområdet löper frikastlinjen (9-meterslinjen) som en streckad halvcirkel. Frikast utförs härifrån eller bakom denna linje. Sju meter rakt framför målet finns 7-meterslinjen, där straffsparkar (7-meterskast) utförs. Den är en meter lång och markerad mitt framför målet.',
+          'Utanför målområdet löper frikastlinjen (9-meterslinjen) som en streckad halvcirkel. Frikast utförs härifrån eller bakom denna linje. Sju meter rakt framför målet finns 7-meterslinjen, där straffkast (7-meterskast) utförs. Den är en meter lång och markerad mitt framför målet.',
           'Mitt på planen finns mittlinjen som delar planen i två halvor. Avkast (spelets start och efter mål) utförs från planens mittpunkt. Längs en av sidlinjerna finns byteszonen, som sträcker sig 4,5 meter åt vardera sidan om mittlinjen. Alla spelarbyten måste ske inom denna zon.',
         ],
         richBlocks: [
@@ -219,7 +219,7 @@ export const lessons: Lesson[] = [
         content: [
           'Målområdet avgränsas av målområdeslinjen som löper i en halvcirkel 6 meter från målet. Denna zon är exklusivt reserverad för målvakten. Ingen utespelare får beträda målområdet, varken med eller utan boll. Målområdeslinjen räknas som en del av målområdet – att trampa på linjen är samma sak som att kliva in i området.',
           'En viktig och spektakulär del av handbollen är att spelare får hoppa över målområdet för att skjuta. En spelare får alltså ta sats utanför målområdeslinjen, hoppa, och släppa bollen innan hen landar. Om bollen lämnar spelarens hand innan landning i målområdet är det tillåtet och kan resultera i mål. Om spelaren däremot landar i målområdet med bollen kvar i handen döms det som inträngning.',
-          'Frikastlinjen (9-meterslinjen) är den streckade halvcirkeln utanför målområdet. Frikast utförs från eller bakom denna linje. Vid frikast ska det försvarande laget stå minst 3 meter från kastaren. 7-meterslinjen, rakt framför målet, används vid straffsituationer – till exempel när en klar målchans förstörs genom regelbrott.',
+          'Frikastlinjen (9-meterslinjen) är den streckade halvcirkeln utanför målområdet. Frikast utförs från eller bakom denna linje. Vid frikast ska det försvarande laget stå minst 3 meter från kastaren. 7-meterslinjen, rakt framför målet, används vid 7-meterssituationer – till exempel när en klar målchans förstörs genom regelbrott.',
         ],
       },
       {
@@ -710,7 +710,7 @@ export const lessons: Lesson[] = [
         icon: 'goal',
         content: [
           'Om en match måste ha en vinnare (till exempel i cupspel eller slutspel) och den ordinarie matchtiden slutar oavgjort, spelas förlängning. Förlängningen består av 2 halvlekar om 5 minuter vardera, med 1 minuts paus mellan halvlekarna. Lagen byter planhalva och det sker lottning om avkast.',
-          'Om matchen fortfarande är oavgjord efter förlängningen avgörs den genom skytteavgörande (straffslagskonkurrens). Varje lag utser 5 skytte som turas om att skjuta 7-meterskast. Lagen skjuter omväxlande och alla skott ska skjutas på samma mål. Domarna lottar om vilket lag som börjar.',
+          'Om matchen fortfarande är oavgjord efter förlängningen avgörs den genom skytte-/straffavgörande. Varje lag utser 5 skytte som turas om att skjuta 7-meterskast. Lagen skjuter omväxlande och alla skott ska skjutas på samma mål. Domarna lottar om vilket lag som börjar.',
           'Om det efter de 5 skotten per lag fortfarande är oavgjort går det till sudden death. Lagen utser en skytt i taget som skjuter omväxlande. Den första omgången där ett lag gör mål och det andra missar avgör matchen. Alla spelare i laget får delta som skytte – man behöver inte begränsa sig till de som spelat under matchen, så länge de finns på spelarförteckningen.',
         ],
         richBlocks: [
@@ -722,7 +722,7 @@ export const lessons: Lesson[] = [
           },
           {
             type: 'didYouKnow',
-            fact: 'det längsta skytteavgörandet i handbollshistorien gick till 17 omgångar sudden death? Det innebär att lagen totalt sköt 44 straffar innan en vinnare korades.',
+            fact: 'det längsta skytteavgörandet i handbollshistorien gick till 17 omgångar sudden death? Det innebär att lagen totalt sköt 44 straffkast/7-meterskast innan en vinnare korades.',
           },
         ],
       },
@@ -750,7 +750,7 @@ export const lessons: Lesson[] = [
   {
     id: 7,
     title: 'Kasttyper & 7-meterskast',
-    subtitle: 'Alla kasttyper i detalj – från avkast till straff',
+    subtitle: 'Alla kasttyper i detalj – från avkast till straffkast',
     icon: 'goal',
     heroDescription:
       'I handboll finns fem olika kasttyper som alla har specifika regler för utförande. Att behärska dessa regler är avgörande för att kunna döma korrekt. I den här lektionen går vi igenom varje kasttyp i detalj – avkast, inkast, målkast, frikast och 7-meterskast – med fokus på de vanligaste felsituationerna och hur du som domare ska agera.',
@@ -819,7 +819,7 @@ export const lessons: Lesson[] = [
         title: '7-meterskast (Regel 14)',
         icon: 'red-card',
         content: [
-          '7-meterskast (straffspark) döms när en klar målchans förstörs genom ett regelbrott, oavsett var på planen det sker. Det kan också dömas vid avsiktlig tillbakaspelning till egen målvakt i målområdet, eller om en spelare i det försvarande laget avsiktligt beträder sitt eget målområde för att förhindra anfall.',
+          'Straffkast/7-meterskast döms när en klar målchans förstörs genom ett regelbrott, oavsett var på planen det sker. Det kan också dömas vid avsiktlig tillbakaspelning till egen målvakt i målområdet, eller om en spelare i det försvarande laget avsiktligt beträder sitt eget målområde för att förhindra anfall.',
           'Utförande: Kastaren ställer sig bakom 7-meterslinjen och ska skjuta mot mål inom 3 sekunder efter domarens signal. Sedan regeländringen 2016 är finter tillåtna vid 7-meterskast – kastaren får göra fintrörelse innan kastet, så länge bollen släpps inom tidsfristen på 3 sekunder. Kastaren får inte beröra eller passera 7-meterslinjen innan bollen har lämnat handen.',
           'Målvakten vid 7-meterskast: Målvakten måste stå på eller bakom 4-meterslinjen (som är 4 meter från målet) men får röra sig framåt efter att bollen lämnat kastarens hand. Om målvakten passerar 4-meterslinjen för tidigt och räddar skottet, ska kastet göras om. Om målvakten passerar för tidigt men skottet går in, räknas målet.',
           'Alla andra spelare ska vid 7-meterskast befinna sig utanför frikastlinjen (9-meterslinjen) och minst 3 meter från kastaren. De får inte beträda området mellan frikastlinjen och målområdeslinjen förrän bollen lämnat kastarens hand.',
@@ -980,7 +980,7 @@ export const lessons: Lesson[] = [
           'Kontaktbedömning är en av domarens svåraste och viktigaste uppgifter. Den grundläggande frågan är alltid: "Var kontakten riktad mot bollen eller mot kroppen?" En försvarare som försöker nå bollen med öppen hand och i processen berör anfallaren gör generellt tillåten kontakt. Men en försvarare som tar tag i anfallaren utan att försöka nå bollen begår ett regelbrott.',
           'Farlig kontakt mot huvudet, halsen eller strupen ska alltid bestraffas strängt – minst 2 minuters utvisning, ofta diskvalifikation beroende på grad av fara. Det spelar ingen roll om kontakten var avsiktlig eller inte – det är resultatet som avgör vid farlig kontakt.',
           'Kontakt mot en spelare som befinner sig i luften (till exempel under ett flygskott) bedöms strängare. En spelare i luften kan inte kontrollera sin landning, och kontakt som tvingar hen att landa okontrollerat kan leda till allvarliga skador. Sådan kontakt ska normalt bestraffas med minst utvisning.',
-          'Kontakt bakifrån ska generellt bedömas strängare än kontakt framifrån, eftersom spelaren som blir angripen bakifrån inte kan se och förbereda sig för kontakten. Att dra en spelare bakifrån, knuffa i ryggen eller tackla bakifrån är vanliga situationer som motiverar progressiv bestraffning.',
+          'Kontakt bakifrån ska generellt bedömas strängare än kontakt framifrån, eftersom spelaren som blir angripen bakifrån inte kan se och förbereda sig för kontakten. Att dra en spelare bakifrån, knuffa i ryggen eller knuffa/putta bakifrån är vanliga situationer som motiverar progressiv bestraffning.',
         ],
       },
       {

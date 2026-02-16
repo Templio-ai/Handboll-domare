@@ -225,7 +225,7 @@ export const quizzes: Quiz[] = [
       {
         id: 6,
         question:
-          'En anfallsspelare blir felaktigt tackad men lyckas ändå ge en bra passning till en medspelare i fritt läge. Vad bör domaren göra?',
+          'En anfallsspelare blir felaktigt stoppad men lyckas ändå ge en bra passning till en medspelare i fritt läge. Vad bör domaren göra?',
         options: [
           { text: 'Blåsa direkt för frikast', isCorrect: false },
           { text: 'Ge en varning och sedan frikast', isCorrect: false },
@@ -481,7 +481,7 @@ export const quizzes: Quiz[] = [
           'En spelare får sin tredje 2-minutersutvisning i samma match. Vad blir konsekvensen?',
         options: [
           { text: 'Spelaren får en fjärde utvisning', isCorrect: false },
-          { text: 'Spelaren får straffspark emot sig', isCorrect: false },
+          { text: 'Spelaren får straffkast/7-meterskast emot sig', isCorrect: false },
           {
             text: 'Spelaren diskvalificeras (rött kort)',
             isCorrect: true,
@@ -534,7 +534,7 @@ export const quizzes: Quiz[] = [
           { text: 'Skjuta undan motståndaren med axeln bakifrån', isCorrect: false },
         ],
         explanation:
-          'I handboll är det tillåtet att använda öppen hand för att blockera eller avleda en motståndare framifrån eller från sidan. Att greppa, knuffa, slå eller tackla bakifrån är inte tillåtet. Gränsen mellan tillåten och otillåten kontakt är en av de viktigaste bedömningarna en domare gör.',
+          'I handboll är det tillåtet att använda öppen hand för att blockera eller avleda en motståndare framifrån eller från sidan. Att greppa, knuffa, slå eller knuffa/putta bakifrån är inte tillåtet. Gränsen mellan tillåten och otillåten kontakt är en av de viktigaste bedömningarna en domare gör.',
       },
       {
         id: 7,
@@ -549,7 +549,7 @@ export const quizzes: Quiz[] = [
           { text: 'Efter den andra 2-minutersutvisningen', isCorrect: false },
         ],
         explanation:
-          'Direkt diskvalifikation ges vid särskilt grova förseelser som innebär fara för motståndarens hälsa, till exempel slag, sparkar eller farliga tacklingar. Det kan också ges vid grovt osportsligt beteende. Domaren behöver inte ha gett tidigare bestraffningar innan rött kort delas ut.',
+          'Direkt diskvalifikation ges vid särskilt grova förseelser som innebär fara för motståndarens hälsa, till exempel slag, sparkar eller farlig kroppskontakt. Det kan också ges vid grovt osportsligt beteende. Domaren behöver inte ha gett tidigare bestraffningar innan rött kort delas ut.',
       },
       {
         id: 8,
@@ -765,17 +765,17 @@ export const quizzes: Quiz[] = [
           { text: 'Lottning avgör', isCorrect: false },
           { text: 'Den senaste målgöraren vinner', isCorrect: false },
           {
-            text: 'Förlängning spelas, och vid fortsatt oavgjort avgörs det med straffläggning',
+            text: 'Förlängning spelas, och vid fortsatt oavgjort avgörs det med skytte-/straffavgörande',
             isCorrect: true,
           },
           { text: 'Matchen spelas om en annan dag', isCorrect: false },
         ],
         explanation:
-          'Om en vinnare måste utses spelas först förlängning (vanligtvis 2 x 5 minuter). Om det fortfarande är oavgjort går matchen till straffläggning (shoot-out). Reglerna för förlängning och straffläggning skiljer sig åt beroende på tävling, men grundprincipen är densamma.',
+          'Om en vinnare måste utses spelas först förlängning (vanligtvis 2 x 5 minuter). Om det fortfarande är oavgjort går matchen till skytte-/straffavgörande (shoot-out). Reglerna för förlängning och skytte-/straffavgörande skiljer sig åt beroende på tävling, men grundprincipen är densamma.',
       },
       {
         id: 7,
-        question: 'Hur många skyttar per lag deltar i en straffläggning (shoot-out)?',
+        question: 'Hur många skyttar per lag deltar i ett skytte-/straffavgörande (shoot-out)?',
         options: [
           { text: '3 skyttar', isCorrect: false },
           { text: '5 skyttar', isCorrect: true },
@@ -783,7 +783,7 @@ export const quizzes: Quiz[] = [
           { text: '10 skyttar', isCorrect: false },
         ],
         explanation:
-          'Vid straffläggning deltar 5 skyttar per lag. Varje skytt har ett försök i taget, och lagen skjuter omväxlande. Om det fortfarande är oavgjort efter alla 5 skyttar fortsätter straffläggningen med en skytt i taget tills en vinnare utses.',
+          'Vid skytte-/straffavgörande deltar 5 skyttar per lag. Varje skytt har ett försök i taget, och lagen skjuter omväxlande. Om det fortfarande är oavgjort efter alla 5 skyttar fortsätter skytte-/straffavgörandet med en skytt i taget tills en vinnare utses.',
       },
       {
         id: 8,
@@ -1240,7 +1240,7 @@ export const quizzes: Quiz[] = [
           { text: 'Det beror helt på matchsituationen', isCorrect: false },
         ],
         explanation:
-          'Kontakt bakifrån bedöms generellt strängare eftersom spelaren inte kan se kontakten komma och därför inte kan skydda sig. Att dra, knuffa eller tackla en spelare bakifrån motiverar normalt progressiv bestraffning (utvisning eller strängare).',
+          'Kontakt bakifrån bedöms generellt strängare eftersom spelaren inte kan se kontakten komma och därför inte kan skydda sig. Att dra, knuffa eller knuffa/putta en spelare bakifrån motiverar normalt progressiv bestraffning (utvisning eller strängare).',
       },
       {
         id: 9,
