@@ -1,6 +1,6 @@
 'use client';
 
-import { useParams, useRouter } from 'next/navigation';
+import { useParams } from 'next/navigation';
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
 import { lessons } from '@/data/lessons';
@@ -12,9 +12,8 @@ import IconResolver from '@/components/icons/IconResolver';
 
 export default function LessonPage() {
   const params = useParams();
-  const router = useRouter();
   const lessonId = Number(params.id);
-  const { getLessonProgress, completeLesson, hydrated } = useProgress();
+  const { getLessonProgress, completeLesson } = useProgress();
 
   const [showQuiz, setShowQuiz] = useState(false);
 

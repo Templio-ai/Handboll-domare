@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 interface ConfettiPiece {
   id: number;
@@ -8,22 +8,23 @@ interface ConfettiPiece {
   color: string;
   delay: number;
   size: number;
+  duration: number;
+}
+
+function generateConfetti(): ConfettiPiece[] {
+  const colors = ['#f97316', '#1e3a5f', '#22c55e', '#eab308', '#ec4899'];
+  return Array.from({ length: 50 }, (_, i) => ({
+    id: i,
+    left: Math.random() * 100,
+    color: colors[Math.floor(Math.random() * colors.length)],
+    delay: Math.random() * 1,
+    size: Math.random() * 8 + 4,
+    duration: 1.5 + Math.random(),
+  }));
 }
 
 export default function Celebration() {
-  const [confetti, setConfetti] = useState<ConfettiPiece[]>([]);
-
-  useEffect(() => {
-    const colors = ['#f97316', '#1e3a5f', '#22c55e', '#eab308', '#ec4899'];
-    const pieces: ConfettiPiece[] = Array.from({ length: 50 }, (_, i) => ({
-      id: i,
-      left: Math.random() * 100,
-      color: colors[Math.floor(Math.random() * colors.length)],
-      delay: Math.random() * 1,
-      size: Math.random() * 8 + 4,
-    }));
-    setConfetti(pieces);
-  }, []);
+  const [confetti] = useState<ConfettiPiece[]>(generateConfetti);
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
@@ -39,7 +40,7 @@ export default function Celebration() {
               height: `${piece.size}px`,
               backgroundColor: piece.color,
               animationDelay: `${piece.delay}s`,
-              animationDuration: `${1.5 + Math.random()}s`,
+              animationDuration: `${piece.duration}s`,
             }}
           />
         ))}

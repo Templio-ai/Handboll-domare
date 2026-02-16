@@ -47,12 +47,6 @@ export default function Quiz({ quiz, onComplete, alreadyPassed }: QuizProps) {
       setSelectedAnswer(null);
       setShowResult(false);
     } else {
-      const finalCorrect =
-        correctCount +
-        (question.options[selectedAnswer].isCorrect ? 0 : 0);
-      // correctCount was already updated above
-      const score = Math.round((correctCount / totalQuestions) * 100);
-      // Recalculate - correctCount already includes current if correct
       setFinished(true);
     }
   }, [
@@ -60,7 +54,6 @@ export default function Quiz({ quiz, onComplete, alreadyPassed }: QuizProps) {
     showResult,
     currentQuestion,
     totalQuestions,
-    correctCount,
     question,
   ]);
 

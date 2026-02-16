@@ -34,8 +34,9 @@ export function useProgress() {
   const [progress, setProgress] = useState<Progress>({});
   const [hydrated, setHydrated] = useState(false);
 
+  // Intentional: load from localStorage after hydration to avoid SSR mismatch
   useEffect(() => {
-    setProgress(loadProgress());
+    setProgress(loadProgress()); // eslint-disable-line react-hooks/set-state-in-effect
     setHydrated(true);
   }, []);
 
