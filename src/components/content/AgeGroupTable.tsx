@@ -1,5 +1,3 @@
-'use client';
-
 import { RuleTableBlock } from '@/types';
 
 function cellStyle(value: string): string {

@@ -403,7 +403,7 @@ export const quizzes: Quiz[] = [
         options: [
           { text: 'Blåser kort i visselpipan och pekar uppåt', isCorrect: false },
           {
-            text: 'Blåser i visselpipan och pekar med armen i kastriktnigen',
+            text: 'Blåser i visselpipan och pekar med armen i kastriktningen',
             isCorrect: true,
           },
           { text: 'Gör en cirkelrörelse med armen', isCorrect: false },

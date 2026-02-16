@@ -121,6 +121,7 @@ export const lessons: Lesson[] = [
               { name: 'Punktmarkering', values: ['JA', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ'] },
               { name: 'Klister', values: ['JA', 'JA', 'JA', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ'] },
               { name: 'Väst som MV-tröja', values: ['NEJ', 'NEJ', 'NEJ', 'JA', 'JA', 'JA', 'JA', 'JA', 'JA', 'JA', 'JA', 'JA'] },
+              { name: 'Sista 30 sek', values: ['NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ', 'NEJ'] },
               { name: 'Blått kort', values: ['JA', 'JA', 'JA', 'JA', 'JA', 'JA', 'JA', 'JA', 'JA', 'JA', 'JA', 'JA'] },
             ],
             footnotes: [
