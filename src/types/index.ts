@@ -26,7 +26,19 @@ export interface DidYouKnowBlock {
   fact: string;
 }
 
-export type RichContentBlock = ScenarioBlock | TipBlock | SignalBlock | DidYouKnowBlock;
+export interface RuleTableBlock {
+  type: 'ruleTable';
+  title?: string;
+  source?: string;
+  ageGroups: string[];
+  rules: {
+    name: string;
+    values: string[];
+  }[];
+  footnotes?: string[];
+}
+
+export type RichContentBlock = ScenarioBlock | TipBlock | SignalBlock | DidYouKnowBlock | RuleTableBlock;
 
 export interface ContentSection {
   title: string;

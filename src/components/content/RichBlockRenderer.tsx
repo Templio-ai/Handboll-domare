@@ -3,6 +3,7 @@ import ScenarioBox from './ScenarioBox';
 import TipBox from './TipBox';
 import DidYouKnowBox from './DidYouKnowBox';
 import EnhancedSignalCard from './EnhancedSignalCard';
+import AgeGroupTable from './AgeGroupTable';
 
 interface Props {
   block: RichContentBlock;
@@ -18,6 +19,8 @@ export default function RichBlockRenderer({ block }: Props) {
       return <DidYouKnowBox {...block} />;
     case 'signal':
       return <EnhancedSignalCard {...block} />;
+    case 'ruleTable':
+      return <AgeGroupTable {...block} />;
     default:
       return null;
   }

@@ -106,6 +106,42 @@ export const quizzes: Quiz[] = [
         explanation:
           'Domarens huvuduppgift är att säkerställa att matchen spelas rättvist och enligt reglerna. Det handlar om att skydda spelarnas säkerhet, tillämpa reglerna konsekvent och skapa förutsättningar för en bra match. Allt annat, som tidshållning och målräkning, är stödfunktioner till detta huvuduppdrag.',
       },
+      {
+        id: 9,
+        question: 'Hur lång är speltiden i en U14-match?',
+        options: [
+          { text: '2 x 15 minuter', isCorrect: false },
+          { text: '2 x 20 minuter', isCorrect: true },
+          { text: '2 x 25 minuter', isCorrect: false },
+          { text: '1 x 20 minuter', isCorrect: false },
+        ],
+        explanation:
+          'U14-matcher spelas 2 x 20 minuter. Speltiderna varierar per åldersklass: U9–U10 spelar 1x20 min, U11–U13 spelar 2x15 min, U14 spelar 2x20 min, och U15–U19 spelar 2x25 min.',
+      },
+      {
+        id: 10,
+        question: 'I vilka åldersklasser är mixade lag (flickor och pojkar) tillåtna?',
+        options: [
+          { text: 'Alla åldersklasser', isCorrect: false },
+          { text: 'U11 och yngre', isCorrect: true },
+          { text: 'U13 och yngre', isCorrect: false },
+          { text: 'Inga åldersklasser', isCorrect: false },
+        ],
+        explanation:
+          'Mixade lag med både flickor och pojkar är tillåtna i U11, U10, U9 Kortplan och U9 Mini. Från U12 och uppåt spelas det i separata flick- och pojklag.',
+      },
+      {
+        id: 11,
+        question: 'Vad är en utbildningstimeout (UTB)?',
+        options: [
+          { text: 'En timeout som lagen själva begär, max 2 per halvlek', isCorrect: false },
+          { text: 'En timeout som domarna tar vid naturligt avbrott i mitten av halvleken', isCorrect: true },
+          { text: 'En timeout som sekretariatet bestämmer vid poängställning', isCorrect: false },
+          { text: 'En timeout som bara används vid skador', isCorrect: false },
+        ],
+        explanation:
+          'Utbildningstimeout (UTB) tas av domarna vid ett naturligt avbrott i mitten av respektive halvlek och är 1 minut lång. Den används i U14 och yngre (t.o.m. U11) istället för vanliga timeouter. Domarna ska tänka på att inte avbryta spelet när ett av lagen drar fördel.',
+      },
     ],
   },
 
