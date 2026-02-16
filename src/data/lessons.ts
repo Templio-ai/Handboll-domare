@@ -764,7 +764,7 @@ export const lessons: Lesson[] = [
         icon: 'red-card',
         content: [
           '7-meterskast (straffspark) döms när en klar målchans förstörs genom ett regelbrott, oavsett var på planen det sker. Det kan också dömas vid avsiktlig tillbakaspelning till egen målvakt i målområdet, eller om en spelare i det försvarande laget avsiktligt beträder sitt eget målområde för att förhindra anfall.',
-          'Utförande: Kastaren ställer sig bakom 7-meterslinjen och ska skjuta mot mål inom 3 sekunder efter domarens signal. Kastet ska vara en sammanhängande kaströrelse framåt – det innebär att kastaren inte får finta så att kaströrelsen avbryts. Om kastet inte är sammanhängande döms det som regelbrott och målkast för det försvarande laget.',
+          'Utförande: Kastaren ställer sig bakom 7-meterslinjen och ska skjuta mot mål inom 3 sekunder efter domarens signal. Sedan regeländringen 2016 är finter tillåtna vid 7-meterskast – kastaren får göra fintrörelse innan kastet, så länge bollen släpps inom tidsfristen på 3 sekunder. Kastaren får inte beröra eller passera 7-meterslinjen innan bollen har lämnat handen.',
           'Målvakten vid 7-meterskast: Målvakten måste stå på eller bakom 4-meterslinjen (som är 4 meter från målet) men får röra sig framåt efter att bollen lämnat kastarens hand. Om målvakten passerar 4-meterslinjen för tidigt och räddar skottet, ska kastet göras om. Om målvakten passerar för tidigt men skottet går in, räknas målet.',
           'Alla andra spelare ska vid 7-meterskast befinna sig utanför frikastlinjen (9-meterslinjen) och minst 3 meter från kastaren. De får inte beträda området mellan frikastlinjen och målområdeslinjen förrän bollen lämnat kastarens hand.',
         ],
@@ -777,9 +777,9 @@ export const lessons: Lesson[] = [
           },
           {
             type: 'scenario',
-            scenario: 'Vid ett 7-meterskast gör skytten en tydlig fintrörelse – hen stannar upp mitt i kaströrelsen, väntar på att målvakten kastar sig, och skjuter sedan i andra hörnet.',
+            scenario: 'Vid ett 7-meterskast gör skytten en fintrörelse – hen låtsas skjuta, väntar på att målvakten kastar sig, och skjuter sedan i andra hörnet. Allt inom 3 sekunder.',
             question: 'Är det tillåtet?',
-            answer: 'Nej! Kastet måste vara en sammanhängande rörelse framåt. En fint där kaströrelsen avbryts är inte tillåten vid 7-meterskast. Döm målkast för det försvarande laget. Observera att en skruvad/böjd kastbana i sig är tillåten – det är avbrottet i rörelsen som är förbjudet.',
+            answer: 'Ja! Sedan regeländringen 2016 är finter tillåtna vid 7-meterskast. Kastaren får finta och variera sin kaströrelse, så länge bollen släpps inom 3 sekunder efter domarens signal och kastaren inte passerar 7-meterslinjen. Det här är en viktig regeländring att känna till – tidigare krävdes en sammanhängande kaströrelse, men den regeln är borttagen.',
           },
         ],
       },

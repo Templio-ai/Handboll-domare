@@ -895,18 +895,18 @@ export const quizzes: Quiz[] = [
       {
         id: 7,
         question:
-          'Vid 7-meterskast gör skytten en tydlig fintrörelse och stoppar upp innan hen kastar. Vad gäller?',
+          'Vid 7-meterskast gör skytten en fintrörelse innan hen kastar. Vad gäller?',
         options: [
-          { text: 'Det är tillåtet så länge bollen inte lämnar handen', isCorrect: false },
+          { text: 'Det är inte tillåtet – kastet måste vara en sammanhängande rörelse', isCorrect: false },
           {
-            text: 'Det är inte tillåtet – kastet måste vara en sammanhängande rörelse',
+            text: 'Det är tillåtet – finter är tillåtna sedan regeländringen 2016',
             isCorrect: true,
           },
-          { text: 'Det är alltid tillåtet att finta vid 7-meterskast', isCorrect: false },
-          { text: 'Skytten får en ny chans att göra om kastet', isCorrect: false },
+          { text: 'Det ger alltid målkast till det försvarande laget', isCorrect: false },
+          { text: 'Skytten får en varning och kastet görs om', isCorrect: false },
         ],
         explanation:
-          'Vid 7-meterskast måste kastet vara en sammanhängande rörelse framåt. Att stanna upp eller finta så att kaströrelsen avbryts är inte tillåtet och döms som regelbrott. Målkast ges till det försvarande laget. Skruvade eller böjda kastbanor är dock tillåtna.',
+          'Sedan regeländringen 2016 är finter tillåtna vid 7-meterskast. Kastaren får finta och variera sin kaströrelse, så länge bollen släpps inom 3 sekunder efter domarens signal och kastaren inte passerar 7-meterslinjen. Det tidigare kravet på en sammanhängande kaströrelse framåt har tagits bort.',
       },
       {
         id: 8,
